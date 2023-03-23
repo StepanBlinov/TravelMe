@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.travelme.SearchFragment"
+        android:label="@string/select_cities_fragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_ticketsFragment"
+            app:destination="@id/ticketsFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_noTicketsFragment"
+            app:destination="@id/noTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.example.travelme.TicketsFragment"
+        android:label="@string/tickets_label"
+        tools:layout="@layout/fragment_tickets">
+        <action
+            android:id="@+id/action_ticketsFragment_to_ticketDetailsFragment"
+            app:destination="@id/ticketDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noTicketsFragment"
+        android:name="com.example.travelme.NoTicketsFragment"
+        android:label="@string/no_tickets_lable"
+        tools:layout="@layout/fragment_no_tickets"/>
+    <fragment
+        android:id="@+id/ticketDetailsFragment"
+        android:name="com.example.travelme.TicketDetailsFragment"
+        android:label="fragment_ticket_details"
+        tools:layout="@layout/fragment_ticket_details" />
+</navigation>

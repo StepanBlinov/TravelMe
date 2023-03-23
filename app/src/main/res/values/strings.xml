@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">TravelMe</string>
+    <string name="arrival_city">Город прилета</string>
+    <string name="departure_city">Город вылета</string>
+    <string name="look_for_tickets">Искать Билеты</string>
+    <string name="cooperite">Разработано Мной)</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_cities_fragment">Выберите маршрут</string>
+    <string name="day_of_departure">День вылета: %s</string>
+    <string name="flight_time">%sЧ</string>
+    <string name="tickets_label">Билеты</string>
+    <string name="arrow_desc">Стрелочка</string>
+    <string name="no_tickets">Нет билетов по выбранному маршруту</string>
+    <string name="no_tickets_lable">Упс! Билетов нет</string>
+    <string name="from">Город вылета:</string>
+    <string name="to">Город прибытия:</string>
+    <string name="departure_date">Дата вылета:</string>
+    <string name="flight_time_des">Время в полете:</string>
 </resources>
